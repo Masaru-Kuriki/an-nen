@@ -33,9 +33,6 @@
   }
   line.textContent = '白って200色あんねん';
 
-  // アンミカは「白って200色あんねん」一本（音声未配置時は3秒固定）
-  const VOICE = 'assets/anmika.m4a';
-
   function revealActions() {
     overlay.classList.add('is-fading-out');
     setTimeout(() => {
@@ -52,10 +49,12 @@
     revealActions();
   }
 
-  const audio = new Audio(VOICE);
-  audio.addEventListener('ended', () => setTimeout(finish, 1000));
-  audio.addEventListener('error', () => setTimeout(finish, RESULT_FALLBACK_MS));
-  audio.play().catch(() => setTimeout(finish, RESULT_FALLBACK_MS));
+  // 音声再生（audio.js が iOSアンロック・タップ再試行を内部で処理）
+  if (window.playAnmika) {
+    window.playAnmika(finish);
+  } else {
+    setTimeout(finish, RESULT_FALLBACK_MS);
+  }
 
   // ボタン挙動
   btnRetry.addEventListener('click', () => {

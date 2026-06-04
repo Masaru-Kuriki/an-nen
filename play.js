@@ -63,13 +63,13 @@
     return a;
   }
 
-  function playVoiceUntilEnd(src, onDone) {
-    let closed = false;
-    const finish = () => { if (!closed) { closed = true; onDone(); } };
-    const audio = new Audio(src);
-    audio.addEventListener('ended', () => setTimeout(finish, 1000));
-    audio.addEventListener('error', () => setTimeout(finish, RESULT_FALLBACK_MS));
-    audio.play().catch(() => setTimeout(finish, RESULT_FALLBACK_MS));
+  function playVoiceUntilEnd(_src, onDone) {
+    // 共通アンミカ音声は audio.js の window.playAnmika に集約
+    if (window.playAnmika) {
+      window.playAnmika(onDone);
+    } else {
+      setTimeout(onDone, RESULT_FALLBACK_MS);
+    }
   }
 
   // ===== 長考演出 =====
