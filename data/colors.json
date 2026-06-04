@@ -1,0 +1,602 @@
+[
+  {
+    "name": "白",
+    "reading": "しろ",
+    "hex": "#FBFBFB",
+    "category": "wa"
+  },
+  {
+    "name": "胡粉色",
+    "reading": "ごふんいろ",
+    "hex": "#FFFFFB",
+    "category": "wa"
+  },
+  {
+    "name": "卯の花色",
+    "reading": "うのはないろ",
+    "hex": "#FBFEFF",
+    "category": "wa"
+  },
+  {
+    "name": "白磁",
+    "reading": "はくじ",
+    "hex": "#FBFFFB",
+    "category": "wa"
+  },
+  {
+    "name": "月白",
+    "reading": "げっぱく",
+    "hex": "#FBFDFF",
+    "category": "wa"
+  },
+  {
+    "name": "鉛白",
+    "reading": "えんぱく",
+    "hex": "#FBFBFF",
+    "category": "wa"
+  },
+  {
+    "name": "銀白色",
+    "reading": "ぎんはくしょく",
+    "hex": "#FBFFFF",
+    "category": "wa"
+  },
+  {
+    "name": "真珠色",
+    "reading": "しんじゅいろ",
+    "hex": "#FEFEFB",
+    "category": "wa"
+  },
+  {
+    "name": "白百合色",
+    "reading": "しろゆりいろ",
+    "hex": "#FFFEFB",
+    "category": "wa"
+  },
+  {
+    "name": "白練",
+    "reading": "しろねり",
+    "hex": "#FBFEFB",
+    "category": "wa"
+  },
+  {
+    "name": "練色",
+    "reading": "ねりいろ",
+    "hex": "#FEFDFB",
+    "category": "wa"
+  },
+  {
+    "name": "鳥の子色",
+    "reading": "とりのこいろ",
+    "hex": "#FBFEFC",
+    "category": "wa"
+  },
+  {
+    "name": "象牙色",
+    "reading": "ぞうげいろ",
+    "hex": "#FBFFFC",
+    "category": "wa"
+  },
+  {
+    "name": "白花色",
+    "reading": "しらはないろ",
+    "hex": "#FBFBFE",
+    "category": "wa"
+  },
+  {
+    "name": "白菫色",
+    "reading": "しろすみれいろ",
+    "hex": "#FBFCFF",
+    "category": "wa"
+  },
+  {
+    "name": "灰白色",
+    "reading": "かいはくしょく",
+    "hex": "#FCFEFB",
+    "category": "wa"
+  },
+  {
+    "name": "雪色",
+    "reading": "ゆきいろ",
+    "hex": "#FBFDFE",
+    "category": "wa"
+  },
+  {
+    "name": "米色",
+    "reading": "べいしょく",
+    "hex": "#FCFEFC",
+    "category": "wa"
+  },
+  {
+    "name": "白藍",
+    "reading": "しらあい",
+    "hex": "#FBFEFE",
+    "category": "wa"
+  },
+  {
+    "name": "生成色",
+    "reading": "きなりいろ",
+    "hex": "#FCFFFB",
+    "category": "wa"
+  },
+  {
+    "name": "桜色",
+    "reading": "さくらいろ",
+    "hex": "#FFFBFB",
+    "category": "wa"
+  },
+  {
+    "name": "薄桜",
+    "reading": "うすざくら",
+    "hex": "#FFFBFC",
+    "category": "wa"
+  },
+  {
+    "name": "卵色",
+    "reading": "たまごいろ",
+    "hex": "#FFFDFB",
+    "category": "wa"
+  },
+  {
+    "name": "牙白",
+    "reading": "げじろ",
+    "hex": "#FCFFFC",
+    "category": "wa"
+  },
+  {
+    "name": "蛤色",
+    "reading": "はまぐりいろ",
+    "hex": "#FEFBFB",
+    "category": "wa"
+  },
+  {
+    "name": "Snow",
+    "reading": "スノー",
+    "hex": "#FEFBFC",
+    "category": "yo"
+  },
+  {
+    "name": "Ivory",
+    "reading": "アイボリー",
+    "hex": "#FBFDFB",
+    "category": "yo"
+  },
+  {
+    "name": "WhiteSmoke",
+    "reading": "ホワイトスモーク",
+    "hex": "#FBFFFE",
+    "category": "yo"
+  },
+  {
+    "name": "GhostWhite",
+    "reading": "ゴーストホワイト",
+    "hex": "#FBFCFE",
+    "category": "yo"
+  },
+  {
+    "name": "FloralWhite",
+    "reading": "フローラルホワイト",
+    "hex": "#FEFEFC",
+    "category": "yo"
+  },
+  {
+    "name": "Seashell",
+    "reading": "シーシェル",
+    "hex": "#FEFCFB",
+    "category": "yo"
+  },
+  {
+    "name": "Linen",
+    "reading": "リネン",
+    "hex": "#FEFCFC",
+    "category": "yo"
+  },
+  {
+    "name": "OldLace",
+    "reading": "オールドレース",
+    "hex": "#FDFFFB",
+    "category": "yo"
+  },
+  {
+    "name": "AntiqueWhite",
+    "reading": "アンティークホワイト",
+    "hex": "#FDFEFB",
+    "category": "yo"
+  },
+  {
+    "name": "AliceBlue",
+    "reading": "アリスブルー",
+    "hex": "#FCFCFE",
+    "category": "yo"
+  },
+  {
+    "name": "Azure",
+    "reading": "アズール",
+    "hex": "#FCFBFE",
+    "category": "yo"
+  },
+  {
+    "name": "MintCream",
+    "reading": "ミントクリーム",
+    "hex": "#FBFFFD",
+    "category": "yo"
+  },
+  {
+    "name": "Honeydew",
+    "reading": "ハニーデュー",
+    "hex": "#FBFDFC",
+    "category": "yo"
+  },
+  {
+    "name": "LavenderBlush",
+    "reading": "ラベンダーブラッシュ",
+    "hex": "#FEFBFD",
+    "category": "yo"
+  },
+  {
+    "name": "Cornsilk",
+    "reading": "コーンシルク",
+    "hex": "#FDFEFC",
+    "category": "yo"
+  },
+  {
+    "name": "Beige",
+    "reading": "ベージュ",
+    "hex": "#FDFFFC",
+    "category": "yo"
+  },
+  {
+    "name": "PapayaWhip",
+    "reading": "パパイヤホイップ",
+    "hex": "#FBFDFD",
+    "category": "yo"
+  },
+  {
+    "name": "BlanchedAlmond",
+    "reading": "ブランチドアーモンド",
+    "hex": "#FEFDFC",
+    "category": "yo"
+  },
+  {
+    "name": "Bisque",
+    "reading": "ビスク",
+    "hex": "#FEFFFB",
+    "category": "yo"
+  },
+  {
+    "name": "Eggshell",
+    "reading": "エッグシェル",
+    "hex": "#FBFEFD",
+    "category": "yo"
+  },
+  {
+    "name": "BabyPowder",
+    "reading": "ベビーパウダー",
+    "hex": "#FCFDFB",
+    "category": "yo"
+  },
+  {
+    "name": "SnowDrift",
+    "reading": "スノードリフト",
+    "hex": "#FEFFFC",
+    "category": "yo"
+  },
+  {
+    "name": "ChalkWhite",
+    "reading": "チョークホワイト",
+    "hex": "#FCFDFC",
+    "category": "yo"
+  },
+  {
+    "name": "BoneWhite",
+    "reading": "ボーンホワイト",
+    "hex": "#FFFEFC",
+    "category": "yo"
+  },
+  {
+    "name": "Alabaster",
+    "reading": "アラバスター",
+    "hex": "#FCFDFD",
+    "category": "yo"
+  },
+  {
+    "name": "オフホワイト",
+    "reading": "オフホワイト",
+    "hex": "#FCFEFD",
+    "category": "co"
+  },
+  {
+    "name": "パールホワイト",
+    "reading": "パールホワイト",
+    "hex": "#FCFFFD",
+    "category": "co"
+  },
+  {
+    "name": "ミルクホワイト",
+    "reading": "ミルクホワイト",
+    "hex": "#FDFDFB",
+    "category": "co"
+  },
+  {
+    "name": "クリームホワイト",
+    "reading": "クリームホワイト",
+    "hex": "#FDFDFC",
+    "category": "co"
+  },
+  {
+    "name": "スノーホワイト",
+    "reading": "スノーホワイト",
+    "hex": "#FCFEFE",
+    "category": "co"
+  },
+  {
+    "name": "シルクホワイト",
+    "reading": "シルクホワイト",
+    "hex": "#FDFDFD",
+    "category": "co"
+  },
+  {
+    "name": "ベビーホワイト",
+    "reading": "ベビーホワイト",
+    "hex": "#FDFEFD",
+    "category": "co"
+  },
+  {
+    "name": "ピュアホワイト",
+    "reading": "ピュアホワイト",
+    "hex": "#FFFBFF",
+    "category": "co"
+  },
+  {
+    "name": "シェルホワイト",
+    "reading": "シェルホワイト",
+    "hex": "#FFFCFB",
+    "category": "co"
+  },
+  {
+    "name": "アイボリーホワイト",
+    "reading": "アイボリーホワイト",
+    "hex": "#FFFCFC",
+    "category": "co"
+  },
+  {
+    "name": "ナチュラルホワイト",
+    "reading": "ナチュラルホワイト",
+    "hex": "#FFFDFC",
+    "category": "co"
+  },
+  {
+    "name": "シャンパンホワイト",
+    "reading": "シャンパンホワイト",
+    "hex": "#FFFFFC",
+    "category": "co"
+  },
+  {
+    "name": "バニラホワイト",
+    "reading": "バニラホワイト",
+    "hex": "#FDFFFD",
+    "category": "co"
+  },
+  {
+    "name": "ライスホワイト",
+    "reading": "ライスホワイト",
+    "hex": "#FEFDFD",
+    "category": "co"
+  },
+  {
+    "name": "クラウドホワイト",
+    "reading": "クラウドホワイト",
+    "hex": "#FBFBFC",
+    "category": "co"
+  },
+  {
+    "name": "シャインホワイト",
+    "reading": "シャインホワイト",
+    "hex": "#FEFEFD",
+    "category": "co"
+  },
+  {
+    "name": "アーモンドミルク",
+    "reading": "アーモンドミルク",
+    "hex": "#FEFFFD",
+    "category": "co"
+  },
+  {
+    "name": "パウダーホワイト",
+    "reading": "パウダーホワイト",
+    "hex": "#FFFDFD",
+    "category": "co"
+  },
+  {
+    "name": "ココナッツミルク",
+    "reading": "ココナッツミルク",
+    "hex": "#FBFCFB",
+    "category": "co"
+  },
+  {
+    "name": "リリーホワイト",
+    "reading": "リリーホワイト",
+    "hex": "#FDFBFB",
+    "category": "co"
+  },
+  {
+    "name": "オパールホワイト",
+    "reading": "オパールホワイト",
+    "hex": "#FDFBFC",
+    "category": "co"
+  },
+  {
+    "name": "ペーパーホワイト",
+    "reading": "ペーパーホワイト",
+    "hex": "#FBFCFC",
+    "category": "co"
+  },
+  {
+    "name": "ウェディングホワイト",
+    "reading": "ウェディングホワイト",
+    "hex": "#FDFBFD",
+    "category": "co"
+  },
+  {
+    "name": "ティアラホワイト",
+    "reading": "ティアラホワイト",
+    "hex": "#FDFCFB",
+    "category": "co"
+  },
+  {
+    "name": "ホイップホワイト",
+    "reading": "ホイップホワイト",
+    "hex": "#FFFEFD",
+    "category": "co"
+  },
+  {
+    "name": "アンティパスト",
+    "reading": "アンティパスト",
+    "hex": "#FFFFFD",
+    "category": "co"
+  },
+  {
+    "name": "シフォンホワイト",
+    "reading": "シフォンホワイト",
+    "hex": "#FBFCFD",
+    "category": "co"
+  },
+  {
+    "name": "クォーツホワイト",
+    "reading": "クォーツホワイト",
+    "hex": "#FCFCFB",
+    "category": "co"
+  },
+  {
+    "name": "プリスティンホワイト",
+    "reading": "プリスティンホワイト",
+    "hex": "#FCFCFC",
+    "category": "co"
+  },
+  {
+    "name": "サテンホワイト",
+    "reading": "サテンホワイト",
+    "hex": "#FDFCFC",
+    "category": "co"
+  },
+  {
+    "name": "ムーンライト",
+    "reading": "ムーンライト",
+    "hex": "#FCFCFD",
+    "category": "co"
+  },
+  {
+    "name": "アイスホワイト",
+    "reading": "アイスホワイト",
+    "hex": "#FCFBFF",
+    "category": "co"
+  },
+  {
+    "name": "クリスタルホワイト",
+    "reading": "クリスタルホワイト",
+    "hex": "#FCFCFF",
+    "category": "co"
+  },
+  {
+    "name": "ダイヤモンドホワイト",
+    "reading": "ダイヤモンドホワイト",
+    "hex": "#FCFDFE",
+    "category": "co"
+  },
+  {
+    "name": "プラチナホワイト",
+    "reading": "プラチナホワイト",
+    "hex": "#FDFCFD",
+    "category": "co"
+  },
+  {
+    "name": "シェーブドアイス",
+    "reading": "シェーブドアイス",
+    "hex": "#FBFBFD",
+    "category": "co"
+  },
+  {
+    "name": "ケーキバター",
+    "reading": "ケーキバター",
+    "hex": "#FEFCFD",
+    "category": "co"
+  },
+  {
+    "name": "メレンゲ",
+    "reading": "メレンゲ",
+    "hex": "#FFFBFD",
+    "category": "co"
+  },
+  {
+    "name": "ホイップクリーム",
+    "reading": "ホイップクリーム",
+    "hex": "#FFFCFD",
+    "category": "co"
+  },
+  {
+    "name": "ピーチクリーム",
+    "reading": "ピーチクリーム",
+    "hex": "#FCFFFE",
+    "category": "co"
+  },
+  {
+    "name": "バターミルク",
+    "reading": "バターミルク",
+    "hex": "#FDFCFE",
+    "category": "co"
+  },
+  {
+    "name": "アイランドスパイス",
+    "reading": "アイランドスパイス",
+    "hex": "#FDFDFE",
+    "category": "co"
+  },
+  {
+    "name": "ヴィスタホワイト",
+    "reading": "ヴィスタホワイト",
+    "hex": "#FCFBFB",
+    "category": "co"
+  },
+  {
+    "name": "ハーフアンドハーフ",
+    "reading": "ハーフアンドハーフ",
+    "hex": "#FDFEFE",
+    "category": "co"
+  },
+  {
+    "name": "ローズホワイト",
+    "reading": "ローズホワイト",
+    "hex": "#FCFBFC",
+    "category": "co"
+  },
+  {
+    "name": "ジャスミンホワイト",
+    "reading": "ジャスミンホワイト",
+    "hex": "#FDFFFE",
+    "category": "co"
+  },
+  {
+    "name": "コットンホワイト",
+    "reading": "コットンホワイト",
+    "hex": "#FCFBFD",
+    "category": "co"
+  },
+  {
+    "name": "ピーチパフ",
+    "reading": "ピーチパフ",
+    "hex": "#FDFBFE",
+    "category": "co"
+  },
+  {
+    "name": "シャワーミルク",
+    "reading": "シャワーミルク",
+    "hex": "#FEFBFE",
+    "category": "co"
+  },
+  {
+    "name": "オーガンジー",
+    "reading": "オーガンジー",
+    "hex": "#FEFCFE",
+    "category": "co"
+  }
+]

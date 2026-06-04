@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <title>レベル選択 - アンネン</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <nav class="page-nav">
+      <a href="index.html" class="back-link">← もどる</a>
+      <div class="current-player">
+        <span class="current-player-label">あそぶ人</span>
+        <span class="current-player-name">プレイヤー2</span>
+      </div>
+    </nav>
+
+    <section class="level-select">
+      <h2 class="level-heading">レベルをえらんでね</h2>
+
+      <div class="level-list">
+        <button class="level-card level-card--lv1" data-level="1">レベル1</button>
+        <button class="level-card level-card--lv2" data-level="2">レベル2</button>
+        <button class="level-card level-card--lv3" data-level="3">レベル3</button>
+      </div>
+    </section>
+  </main>
+
+  <div class="orientation-lock" aria-hidden="true">
+    <div class="orientation-lock-icon">📱</div>
+    <div class="orientation-lock-text">縦向きでプレイしてね</div>
+  </div>
+
+  <script src="level.js"></script>
+  <script src="click.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <title>アンネン</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header class="top-header">
+      <img src="assets/title.png" alt="白って200色アンネン!!!" class="title-logo">
+      <img src="assets/normal_top.png" alt="" class="mascot">
+    </header>
+
+    <section class="player-select">
+      <h2 class="select-heading">誰があそぶ？</h2>
+
+      <div class="card-grid">
+        <a href="level.html" class="player-card">
+          <span class="card-edit" aria-label="名前を編集">✎</span>
+          <div class="card-name">プレイヤー1</div>
+          <div class="card-meta">
+            <div class="card-last">最終: 6/2</div>
+            <div class="card-rank">3位</div>
+            <div class="card-score">1,250点</div>
+          </div>
+        </a>
+
+        <a href="level.html" class="player-card">
+          <span class="card-edit" aria-label="名前を編集">✎</span>
+          <div class="card-name">プレイヤー2</div>
+          <div class="card-meta">
+            <div class="card-last">最終: 5/30</div>
+            <div class="card-rank">1位</div>
+            <div class="card-score">2,800点</div>
+          </div>
+        </a>
+
+        <a href="level.html" class="player-card">
+          <span class="card-edit" aria-label="名前を編集">✎</span>
+          <div class="card-name">プレイヤー3</div>
+          <div class="card-meta">
+            <div class="card-last">最終: 5/28</div>
+            <div class="card-rank">2位</div>
+            <div class="card-score">1,980点</div>
+          </div>
+        </a>
+
+        <button class="player-card player-card--add">
+          <span class="card-add-icon">+</span>
+          <div class="card-add-label">追加</div>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <div class="orientation-lock" aria-hidden="true">
+    <div class="orientation-lock-icon">📱</div>
+    <div class="orientation-lock-text">縦向きでプレイしてね</div>
+  </div>
+
+  <script src="click.js"></script>
+</body>
+</html>

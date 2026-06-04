@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <title>プレイ - アンネン</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container container--play">
+    <nav class="play-nav">
+      <a href="level.html" class="back-link">← もどる</a>
+      <div class="play-progress">問題 <span class="play-progress-current" id="qCurrent">1</span> / <span class="play-progress-total" id="qTotal">5</span></div>
+      <div class="play-lives" id="lives" aria-label="ライフ3">
+        <span class="play-life" data-i="0">♥</span>
+        <span class="play-life" data-i="1">♥</span>
+        <span class="play-life" data-i="2">♥</span>
+      </div>
+    </nav>
+
+    <section class="quest">
+      <div class="quest-chip" id="questChip"></div>
+      <div class="quest-info">
+        <div class="quest-label">この色をさがして</div>
+        <div class="quest-name" id="questName">純白</div>
+      </div>
+    </section>
+
+    <section class="board-wrap">
+      <div class="board" id="board"></div>
+    </section>
+
+    <div class="play-mascot-wrap">
+      <img src="assets/normal_top.png" alt="" class="play-mascot">
+    </div>
+  </main>
+
+  <div class="orientation-lock" aria-hidden="true">
+    <div class="orientation-lock-icon">📱</div>
+    <div class="orientation-lock-text">縦向きでプレイしてね</div>
+  </div>
+
+  <!-- 長考オーバーレイ：画面いっぱいにアンミカ + 下部にセリフ -->
+  <div class="tease-overlay" id="teaseOverlay" hidden>
+    <img src="assets/tease.png" alt="" class="tease-mascot">
+    <div class="tease-line">白って200色あんねん</div>
+  </div>
+
+  <!-- 正解オーバーレイ：画面いっぱいにアンミカ + 下部にHappy/Lucky/Peace -->
+  <div class="correct-overlay" id="correctOverlay" hidden>
+    <img src="assets/happy.png" alt="" class="correct-mascot">
+    <div class="correct-line" id="correctLine">白って200色あんねん</div>
+  </div>
+
+  <!-- ミスオーバーレイ：画面いっぱいにアンミカ + 下部に「白って200色あんねん」 -->
+  <div class="miss-overlay" id="missOverlay" hidden>
+    <img src="assets/sad.png" alt="" class="miss-mascot">
+    <div class="miss-line">白って200色あんねん</div>
+  </div>
+
+  <script src="data/colors.js"></script>
+  <script src="play.js"></script>
+  <script src="click.js"></script>
+</body>
+</html>
