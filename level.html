@@ -14,7 +14,7 @@
       <a href="index.html" class="back-link">← もどる</a>
       <div class="current-player">
         <span class="current-player-label">あそぶ人</span>
-        <span class="current-player-name">プレイヤー2</span>
+        <span class="current-player-name" id="currentPlayerName">…</span>
       </div>
     </nav>
 
@@ -34,6 +34,8 @@
     <div class="orientation-lock-text">縦向きでプレイしてね</div>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+  <script src="supabase.js"></script>
   <script src="level.js"></script>
   <script src="click.js"></script>
 </body>

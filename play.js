@@ -26,9 +26,10 @@
   const VOICE = 'assets/anmika.m4a';
   const LINE_TEXT = '白って200色あんねん';
 
-  // ===== URLパラメータからレベル取得 =====
+  // ===== URLパラメータからレベル・プレイヤー取得 =====
   const params = new URLSearchParams(window.location.search);
   const level = parseInt(params.get('level') || '1', 10);
+  const playerId = params.get('player') || '';
   const totalQuestions = LEVEL_QUESTIONS[level] || 5;
 
   // ===== ゲーム状態 =====
@@ -38,6 +39,13 @@
   let teaseShown = false;
   let busy = false;
   let answerTile = null;
+  let currentStreak = 0;     // 現在の連続正解数
+  let maxStreak = 0;         // この回の最高連続正解数
+
+  // プレイ開始時に last_played_at 更新
+  if (playerId && window.annenDB) {
+    window.annenDB.touchLastPlayed(playerId);
+  }
 
   // ===== UI更新 =====
   function renderProgress() {
@@ -100,6 +108,8 @@
       correctOverlay.hidden = true;
       busy = false;
       correctCount++;
+      currentStreak++;
+      if (currentStreak > maxStreak) maxStreak = currentStreak;
       advanceQuestion();
     });
   }
@@ -119,6 +129,7 @@
       setTimeout(() => {
         answerTile.el.classList.remove('tile--answer-highlight');
         busy = false;
+        currentStreak = 0; // ミスで連続正解リセット
         loseLife();
       }, ANSWER_REVEAL_MS);
     });
@@ -147,26 +158,35 @@
     advanceQuestion();
   }
 
-  function gameClear() {
-    const params = new URLSearchParams({
-      type: 'clear',
+  function saveSessionAndNavigate(type, livesOverride) {
+    const savedLives = livesOverride !== undefined ? livesOverride : lives;
+    if (playerId && window.annenDB) {
+      window.annenDB.saveScore({
+        player_id: playerId,
+        level: level,
+        correct_count: correctCount,
+        total_questions: totalQuestions,
+        consecutive_correct: maxStreak,
+        cleared: type === 'clear',
+      });
+    }
+    const qs = new URLSearchParams({
+      type,
       level: String(level),
       correct: String(correctCount),
       total: String(totalQuestions),
-      lives: String(lives),
+      lives: String(savedLives),
     });
-    window.location.href = `result.html?${params.toString()}`;
+    if (playerId) qs.set('player', playerId);
+    window.location.href = `result.html?${qs.toString()}`;
+  }
+
+  function gameClear() {
+    saveSessionAndNavigate('clear');
   }
 
   function gameOver() {
-    const params = new URLSearchParams({
-      type: 'gameover',
-      level: String(level),
-      correct: String(correctCount),
-      total: String(totalQuestions),
-      lives: '0',
-    });
-    window.location.href = `result.html?${params.toString()}`;
+    saveSessionAndNavigate('gameover', 0);
   }
 
   // ===== 問題セットアップ =====

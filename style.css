@@ -122,6 +122,15 @@ body::before {
   gap: 14px;
 }
 
+.card-loading {
+  grid-column: span 2;
+  text-align: center;
+  padding: 32px 16px;
+  color: var(--gold-deep);
+  font-size: 14px;
+  letter-spacing: 0.1em;
+}
+
 .player-card {
   position: relative;
   background: linear-gradient(180deg, #ffffff 0%, #fdf6e3 100%);
@@ -152,11 +161,26 @@ body::before {
 
 .card-edit {
   position: absolute;
-  top: 8px;
-  right: 10px;
+  top: 4px;
+  right: 6px;
+  width: 28px;
+  height: 28px;
   font-size: 14px;
   color: var(--gold-mid);
   opacity: 0.75;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-edit:hover {
+  opacity: 1;
+  background: rgba(212, 175, 55, 0.15);
 }
 
 .card-name {

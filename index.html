@@ -18,41 +18,9 @@
     <section class="player-select">
       <h2 class="select-heading">誰があそぶ？</h2>
 
-      <div class="card-grid">
-        <a href="level.html" class="player-card">
-          <span class="card-edit" aria-label="名前を編集">✎</span>
-          <div class="card-name">プレイヤー1</div>
-          <div class="card-meta">
-            <div class="card-last">最終: 6/2</div>
-            <div class="card-rank">3位</div>
-            <div class="card-score">1,250点</div>
-          </div>
-        </a>
-
-        <a href="level.html" class="player-card">
-          <span class="card-edit" aria-label="名前を編集">✎</span>
-          <div class="card-name">プレイヤー2</div>
-          <div class="card-meta">
-            <div class="card-last">最終: 5/30</div>
-            <div class="card-rank">1位</div>
-            <div class="card-score">2,800点</div>
-          </div>
-        </a>
-
-        <a href="level.html" class="player-card">
-          <span class="card-edit" aria-label="名前を編集">✎</span>
-          <div class="card-name">プレイヤー3</div>
-          <div class="card-meta">
-            <div class="card-last">最終: 5/28</div>
-            <div class="card-rank">2位</div>
-            <div class="card-score">1,980点</div>
-          </div>
-        </a>
-
-        <button class="player-card player-card--add">
-          <span class="card-add-icon">+</span>
-          <div class="card-add-label">追加</div>
-        </button>
+      <div class="card-grid" id="cardGrid">
+        <!-- カードはJSで動的生成 -->
+        <div class="card-loading">読み込み中...</div>
       </div>
     </section>
   </main>
@@ -62,6 +30,9 @@
     <div class="orientation-lock-text">縦向きでプレイしてね</div>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+  <script src="supabase.js"></script>
+  <script src="top.js"></script>
   <script src="click.js"></script>
 </body>
 </html>

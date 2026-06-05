@@ -16,6 +16,7 @@
   const correct = parseInt(params.get('correct') || '0', 10);
   const total = parseInt(params.get('total') || '0', 10);
   const lives = parseInt(params.get('lives') || '0', 10);
+  const playerId = params.get('player') || '';
 
   // 表示振り分け（セリフは全演出共通「白って200色あんねん」）
   if (type === 'clear') {
@@ -58,7 +59,10 @@
 
   // ボタン挙動
   btnRetry.addEventListener('click', () => {
-    window.location.href = `play.html?level=${level}`;
+    const url = playerId
+      ? `play.html?level=${level}&player=${encodeURIComponent(playerId)}`
+      : `play.html?level=${level}`;
+    window.location.href = url;
   });
   btnQuit.addEventListener('click', () => {
     window.location.href = 'index.html';
